@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    height: 100vh;
+}
+
+main{
+    display: flex;
+}
+
+.sidebar{
+    width: 200px;
+    background-color: gold;
+    height: 85vh;
+}
+
+.mainsection{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 200px);
+    overflow: auto;
+    
+}
+
+.sbarrasotto{
+    background-color: blue;
+    width: 100%;
+    height: 15vh;
+}
+
+.logo{
+    padding: 10px;
+    width: 150px;
+    height: 60px;
+    background-color: bisque;
+}
+
+#img1{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.sezioni div{
+    margin: 10px;
+}
+
+.playlist>*{
+    margin: 10px;
+}
+
+
+
+.upbar{
+    background-color: aquamarine;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mainsect{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottone{
+    border: 2px white solid;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 2rem;
+    margin: 15px;
+}
+
+
+.sezionimain{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    flex-basis: 100%;
+    
+}
+
+.sezionimain ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.sezionimain li{
+    margin: 10px;
+}
+
+.recentplayed{
+    flex-basis: 100%;
+    height: 70px;
+    background-color: ;
+    display: flex;
+    align-items: center;
+}
+
+.recentplayed h1{
+    padding: 10px;
+}
+
+.sezionecard{
+    height: 220px;
+    width: calc(100vw - 200px);
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    height: 200px;
+    width: 200px;
+    flex-basis: calc(100% / 6);
+}
+
+#img2 {
+    width: 70%;
+    margin: 10px auto 0;
+    height: auto;
+    display: block;
+}
+
+.card h4, .card p{
+    text-align: center;
+    margin: 5px 0;
+    color: white;
+}
+
+.creatoperjon{
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    flex-basis: 100%;
+}
+
+.creatoperjon h1{
+    flex-basis: 100%;
+    margin: 10px 0 0 10px;
+}
+
+.creatoperjon p{
+    flex-basis: 100%;
+    margin: -5px 0 0 10px;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+
+
+

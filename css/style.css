@@ -14,9 +14,16 @@ main{
 
 .sidebar{
     width: 200px;
-    background-color: gold;
+    background-color: bisque;
     height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.logo, .sezioni, .playlist, .sidend{
+    flex-basis: 100%;
+}
+
 
 .mainsection{
     height: 85vh;
@@ -28,38 +35,66 @@ main{
 }
 
 .sbarrasotto{
-    background-color: blue;
+    background-color: rgba(128, 128, 128, 0.07);
     width: 100%;
     height: 15vh;
     display: flex;
     justify-content: space-between;
 }
 
-.logo{
+
+
+.logo1{
     padding: 10px;
     width: 150px;
     height: 60px;
     background-color: bisque;
 }
 
-#img1{
+#img1 {
     width: 100%;
     height: auto;
     display: block;
   }
 
+
 .sezioni div{
-    margin: 10px;
+    margin-left:5px;
+}
+.home1  {
+    height: 30px;
+    display: flex; 
 }
 
+#img121{
+    height: 100%;
+    display: block;
+    
+}
+
+.home1 span{
+    align-self: center;
+}
+
+.playlist{
+    margin-top: 10px;
+}
 .playlist>*{
-    margin: 10px;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+.sidend{
+    margin-left: 14px;
+    margin-top: 5px;
+    
 }
 
-
+.borderbottom{
+    border-bottom: 2px black solid;
+}
 
 .upbar{
-    background-color: aquamarine;
+    background-color: bisque;
     height: 60px;
     display: flex;
     justify-content: flex-end;
@@ -67,7 +102,7 @@ main{
 }
 
 .mainsect{
-    background-color: brown;
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
 }
@@ -83,7 +118,7 @@ main{
 
 
 .sezionimain{
-    background-color: white;
+    background-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +139,7 @@ main{
 .recentplayed{
     flex-basis: 100%;
     height: 70px;
-    background-color: ;
+    background-color: gray;
     display: flex;
     align-items: center;
 }
@@ -116,7 +151,7 @@ main{
 .sezionecard{
     height: 220px;
     width: calc(100vw - 200px);
-    background-color: black;
+    background-color: gray;
     display: flex;
     align-items: center;
 }
@@ -144,7 +179,7 @@ main{
     height: 70px;
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+    background-color: gray;
     flex-basis: 100%;
 }
 

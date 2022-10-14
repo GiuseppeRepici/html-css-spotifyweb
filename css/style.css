@@ -17,11 +17,11 @@ main{
     background-color: bisque;
     height: 85vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.logo, .sezioni, .playlist, .sidend{
-    flex-basis: 100%;
+.playlist{
+    flex-grow: 1;
 }
 
 
@@ -66,6 +66,7 @@ main{
     display: flex; 
 }
 
+
 #img121{
     height: 100%;
     display: block;
@@ -96,9 +97,12 @@ main{
 .upbar{
     background-color: bisque;
     height: 60px;
+    width: calc(100vw - 200px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    z-index: 2;
 }
 
 .mainsect{

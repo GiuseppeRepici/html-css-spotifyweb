@@ -53,10 +53,10 @@ footer{
     background-color: bisque;
 }
 
-#img1 {
+#img22 {
     width: 100%;
     height: auto;
-    display: block;
+    display: none;
   }
 
 
@@ -142,7 +142,7 @@ footer{
     align-items: center;
     height: 50px;
     flex-basis: 100%;
-    width: calc(100% - 200px);
+    width: calc(100vw - 200px);
     margin-top: 60px;
     
 }
@@ -150,10 +150,13 @@ footer{
 .sezionimain ul{
     display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
+
 }
 
 .sezionimain li{
-    margin: 10px;
+    margin-left: 5px;
+    flex: calc(100% / 6 - 30px);
 }
 
 .sezionimain li:hover{
@@ -174,12 +177,27 @@ footer{
     padding: 10px;
 }
 
+.sezionecard1{
+    width: calc(100vw - 200px);
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .sezionecard{
     height: 220px;
     width: calc(100vw - 200px);
     background-color: gray;
     display: flex;
     align-items: center;
+}
+
+.card1{
+    height: 200px;
+    width: 200px;
+    flex-basis: calc(100% / 6);
+    position: relative;
 }
 
 .card{
@@ -208,11 +226,11 @@ footer{
     display: none;
 }
 
-.card:hover .play1{
+.card:hover .play1 , .card1:hover .play1{
     display: block;
 }
 
-.card h4, .card p{
+.card h4, .card p, .card1 h4, .card1 p{
     text-align: center;
     margin: 5px 0;
     color: white;
@@ -398,4 +416,59 @@ footer{
 
 .sbarrasotto3:hover .cerchio11{
     display: block;
+}
+
+
+@media screen and (max-width: 768px){
+    .card1{
+        height: 200px;
+        width: 200px;
+        flex-basis: calc(100% / 4);
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .sidebar{
+        width: 60px;
+    }
+    
+    .card1 , .card{
+        height: 200px;
+        width: 200px;
+        flex-basis: calc(100% / 2);
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .sezionimain li{
+        margin-left: 5px;
+        flex-basis: calc(100% / 4 - 20px);
+    }
+
+    .sezioni{
+        flex-grow: 1;
+    }
+
+    .home1 span{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    #img1{
+        display: none;
+    }
+
+    #img22{
+        display: block;
+        height: 40px;
+        margin-left: -45px;
+    }
+
+    .mainsection ,.upbar ,.sezionimain , .recentplayed, .sezionecard1 ,.creatoperjon ,.sezionecard, .creatoperjon  {
+        width: calc(100vw - 60px);
+    }
 }

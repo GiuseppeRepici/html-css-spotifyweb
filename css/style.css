@@ -219,10 +219,16 @@ footer{
     color: white;
     scale: 3;
 }
+
+.prov{
+    position: relative;
+}
+
 .play1{
     position: absolute;
-    top: 30%;
-    left: 47%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
 }
 
@@ -261,6 +267,7 @@ footer{
 .item1{
     display: flex;
     align-items: center;
+    flex-basis: 30%;
 }
 
 .img121 {
@@ -282,7 +289,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex-basis: 250%;
+    width: 30vw;
 }
 
 .item2 span{
@@ -302,7 +310,7 @@ footer{
 
 .sbarra{
     height: 10px;
-    width: 250px;
+    width: 40vw;
     background-color: black;
     border: 2px  solid white;
     margin: 20px;
@@ -311,7 +319,7 @@ footer{
 
 .sbarra1{
     height: 10px;
-    width: 150px;
+    width: 25vw;
     background-color: green;
     border: 2px solid white;
     border-right: 0;
@@ -328,7 +336,7 @@ footer{
     border-radius: 2rem;
     position: absolute;
     top: -7px;
-    left: 140px;
+    left: 24vw;
     display: none;
 }
 
@@ -346,8 +354,10 @@ footer{
 }
 
 .item3{
+    margin-right: -20px;
     display: flex;
     align-items: center;
+    flex-basis: 30%;
 }
 
 
@@ -420,11 +430,30 @@ footer{
 
 
 @media screen and (max-width: 768px){
-    .card1{
+    .card1 , .card{
         height: 200px;
         width: 200px;
         flex-basis: calc(100% / 4);
         position: relative;
+    }
+
+    .item2{
+        flex-basis: 250%;
+    }
+    
+    .sbarra{
+        width: 20vw;
+    }
+    .sbarra1{
+        width: 12.5vw;
+    }
+
+    .cerchio{
+        left: 10.5vw;
+    }
+
+    .play1{
+        scale:0.8;
     }
 }
 
@@ -471,4 +500,13 @@ footer{
     .mainsection ,.upbar ,.sezionimain , .recentplayed, .sezionecard1 ,.creatoperjon ,.sezionecard, .creatoperjon  {
         width: calc(100vw - 60px);
     }
+
+    .play1{
+        scale: 1.5;
+    }
+
+    .borderbottom{
+        border-bottom: 0;
+    }
+
 }

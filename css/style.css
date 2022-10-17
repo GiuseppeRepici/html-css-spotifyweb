@@ -10,12 +10,12 @@ body{
 
 main{
     display: flex;
-    height: calc(100vh - 120px);
+    height: calc(100% - 120px);
 }
 
 .sidebar{
     width: 200px;
-    background-color: bisque;
+    background-color: rgba(0,0,0,255);
     display: flex;
     flex-direction: column;
 }
@@ -28,7 +28,7 @@ main{
 .mainsection{
     display: flex;
     flex-direction: column;
-    width: calc(100vw - 200px);
+    width: calc(100% - 200px);
     overflow: auto;
     
 }
@@ -37,11 +37,12 @@ footer{
     height: 120px;
 }
 .sbarrasotto{
-    background-color: rgba(128, 128, 128, 0.07);
-    width: 100vw;
+    background-color: rgba(40,40,40,255);
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    color: gray;
 }
 
 
@@ -50,7 +51,7 @@ footer{
     padding: 10px;
     width: 150px;
     height: 60px;
-    background-color: bisque;
+    background-color: rgba(0,0,0,255);
 }
 
 #img22 {
@@ -66,6 +67,7 @@ footer{
 .home1  {
     height: 30px;
     display: flex; 
+    color: gray;
 }
 
 
@@ -80,7 +82,7 @@ footer{
 }
 
 .home1:hover {
-    color: aliceblue;
+    color: white;
 }
 
 .playlist h2:hover, .playlist p:hover, .sidend p:hover {
@@ -89,6 +91,7 @@ footer{
 
 .playlist{
     margin-top: 10px;
+    color: gray;
 }
 .playlist>*{
     margin-left: 14px;
@@ -105,9 +108,9 @@ footer{
 }
 
 .upbar{
-    background-color: bisque;
+    background-color: rgba(8,11,18,255);
     height: 60px;
-    width: calc(100vw - 200px);
+    width: calc(100% - 200px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -116,7 +119,7 @@ footer{
 }
 
 .mainsect{
-    background-color: black;
+    background-color: rgba(20,25,34,255);
     display: flex;
     flex-wrap: wrap;
 }
@@ -135,16 +138,13 @@ footer{
 }
 
 
-.sezionimain{
-    background-color: gray;
+.sezionimain {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
     flex-basis: 100%;
-    width: calc(100vw - 200px);
-    margin-top: 60px;
-    
+    margin-top: 60px; 
 }
 
 .sezionimain ul{
@@ -157,6 +157,7 @@ footer{
 .sezionimain li{
     margin-left: 5px;
     flex: calc(100% / 6 - 30px);
+    color: gray;
 }
 
 .sezionimain li:hover{
@@ -168,18 +169,16 @@ footer{
 .recentplayed{
     flex-basis: 100%;
     height: 70px;
-    background-color: gray;
     display: flex;
     align-items: center;
+    color:  white;
 }
 
 .recentplayed h1{
     padding: 10px;
 }
 
-.sezionecard1{
-    width: calc(100vw - 200px);
-    background-color: gray;
+.sezionecard1 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -187,8 +186,7 @@ footer{
 
 .sezionecard{
     height: 220px;
-    width: calc(100vw - 200px);
-    background-color: gray;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -232,7 +230,7 @@ footer{
     display: none;
 }
 
-.card:hover .play1 , .card1:hover .play1{
+.card:hover .play1 , .card1:hover .play1 ,.img121:hover .play1 {
     display: block;
 }
 
@@ -246,8 +244,8 @@ footer{
     height: 70px;
     display: flex;
     flex-wrap: wrap;
-    background-color: gray;
     flex-basis: 100%;
+    color:  white;
 }
 
 .creatoperjon h1{
@@ -258,6 +256,7 @@ footer{
 .creatoperjon p{
     flex-basis: 100%;
     margin: -5px 0 0 10px;
+    color: gray;
 }
 
 .round{
@@ -291,11 +290,12 @@ footer{
     align-items: center;
     flex-basis: 250%;
     width: 30vw;
+    color: white;
 }
 
 .item2 span{
     margin: 5px;
-    flex-basis: 100%;
+    flex-grow: 1;
 }
 
 
@@ -312,7 +312,7 @@ footer{
     height: 10px;
     width: 40vw;
     background-color: black;
-    border: 2px  solid white;
+    border: 2px  solid rgba(40,40,40,255);
     margin: 20px;
     position: relative;
 }
@@ -321,7 +321,7 @@ footer{
     height: 10px;
     width: 25vw;
     background-color: green;
-    border: 2px solid white;
+    border: 2px solid rgba(40,40,40,255);
     border-right: 0;
     margin: 20px;
     position: absolute;
@@ -353,8 +353,7 @@ footer{
     background-color: blue;
 }
 
-.item3{
-    margin-right: -20px;
+.item3 {
     display: flex;
     align-items: center;
     flex-basis: 30%;
@@ -380,7 +379,7 @@ footer{
     height: 10px;
     width: 60px;
     background-color: black;
-    border: 2px  solid white;
+    border: 2px  solid rgba(40,40,40,255);
     margin: 20px;
     position: relative;
 }
@@ -389,7 +388,7 @@ footer{
     height: 10px;
     width: 35px;
     background-color: green;
-    border: 2px solid white;
+    border: 2px solid rgba(40,40,40,255);
     border-right: 0;
     margin: 20px;
     position: absolute;
@@ -473,6 +472,7 @@ footer{
     .sezionimain li{
         margin-left: 5px;
         flex-basis: calc(100% / 4 - 20px);
+        text-align: center;
     }
 
     .sezioni{
